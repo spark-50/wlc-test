@@ -9,7 +9,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "سيرفر العرب")
+        guild = client.guilds.find("name", "test server")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -29,7 +29,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "سيرفر العرب")
+        guild = client.guilds.find("name", "test server")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -47,7 +47,7 @@ client.on("guildMemberAdd", (member) => {
 
  client.on('guildMemberAdd', member => {
 
-     if (member.guild.id === "439033827499835414") {
+     if (member.guild.id === "270978812962013185") {
     
 if (member.user.bot) return;
 var Canvas = require('canvas')
@@ -253,7 +253,6 @@ client.on('message', message => {
         }
 }
 });
- client.login('NDM4OTU2Mzc3MTcyNDc1OTA1.DcM09A.2PGnMbXT2mc9LcBSvyluuCm-Ymo');
 
 
 client.login(process.env.BOT_TOKEN);
